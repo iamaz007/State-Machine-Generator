@@ -1,0 +1,38 @@
+<head>
+  <meta charset="utf-8" />
+  <title>Compiler Project</title>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./old.js"></script>
+</head>
+
+<body>
+  <div style="display: flex">
+    <h5>Add Edges Details</h5>
+    <label
+      >Add Node Source
+      <input id="edgeSource" type="number" min="0" />
+    </label>
+    <label
+      >Add Node Target
+      <input id="edgeTarget" type="number" min="0" />
+    </label>
+  </div>
+
+  <div style="display: flex">
+    <label
+      >Add Node Name
+      <input id="nodeName" type="text" />
+    </label>
+  </div>
+  <div style="display: flex">
+    <label
+      >Add Edge Input
+      <input id="edgeInput" type="text" />
+    </label>
+  </div>
+
+  <button onclick="onAddNode()">add node</button>
+
+  <div class="svg"></div>
+</body>
